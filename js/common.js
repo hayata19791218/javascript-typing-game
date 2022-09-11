@@ -4,9 +4,9 @@ let typingText = document.getElementById("typingText");
 const words = ["apple", "banana", "milk"];
 const miss = document.getElementById("miss");
 let missNumber = 0;
-let countDownNumber = document.getElementById("countDownNumber");
 const reset = document.querySelector(".reset");
 let state = true;
+let countDownNumber = document.getElementById("countDownNumber");
 
 typingText.innerText = words[0];
 
@@ -15,9 +15,9 @@ window.addEventListener("keydown", function (e) {
 
   if (!state) return;
   if (key == typingText.innerText.slice(0, 1)) {
-    key = words[0].slice(1);
-    typingText.innerText = key;
-    words[0] = key;
+    typingText.innerText = typingText.innerText.slice(1);
+    words[0] = typingText.innerText;
+    console.log(words[0].length);
   } else {
     missNumber++;
     miss.innerText = missNumber;
