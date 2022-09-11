@@ -1,0 +1,36 @@
+.big {
+  font-size: 50px;
+}
+.countDown {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f7f7f7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 50px;
+  line-height: 100vh;
+  text-align: center;
+}
+.none {
+  display: none;
+}
+.wrap {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 300px;
+}
+.typingText {
+  font-size: 30px;
+}
+.reset {
+  display: none;
+}
+.block {
+  display: block;
+  color: #000;
+}
+.none {
+  display: none;
+}
